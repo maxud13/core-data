@@ -12,6 +12,7 @@
 		6AC1921E1F8D3805000DA3FD /* Owner+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC192191F8D3805000DA3FD /* Owner+CoreDataClass.m */; };
 		6AC1921F1F8D3805000DA3FD /* Owner+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1921B1F8D3805000DA3FD /* Owner+CoreDataProperties.m */; };
 		6AC192221F8D40BD000DA3FD /* NSString+Validation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC192211F8D40BD000DA3FD /* NSString+Validation.m */; };
+		6AC1925C1F91275F000DA3FD /* AppDelegate+Data_Working.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC1925B1F91275F000DA3FD /* AppDelegate+Data_Working.m */; };
 		6ADC28C61F8D29FA003959A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADC28C51F8D29FA003959A6 /* AppDelegate.m */; };
 		6ADC28C91F8D29FA003959A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ADC28C81F8D29FA003959A6 /* ViewController.m */; };
 		6ADC28CC1F8D29FA003959A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6ADC28CA1F8D29FA003959A6 /* Main.storyboard */; };
@@ -51,6 +52,8 @@
 		6AC1921B1F8D3805000DA3FD /* Owner+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Owner+CoreDataProperties.m"; sourceTree = "<group>"; };
 		6AC192201F8D40BD000DA3FD /* NSString+Validation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Validation.h"; sourceTree = "<group>"; };
 		6AC192211F8D40BD000DA3FD /* NSString+Validation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Validation.m"; sourceTree = "<group>"; };
+		6AC1925A1F91275F000DA3FD /* AppDelegate+Data_Working.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Data_Working.h"; sourceTree = "<group>"; };
+		6AC1925B1F91275F000DA3FD /* AppDelegate+Data_Working.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Data_Working.m"; sourceTree = "<group>"; };
 		6ADC28C11F8D29FA003959A6 /* Core Data.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Core Data.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ADC28C41F8D29FA003959A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6ADC28C51F8D29FA003959A6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -98,6 +101,7 @@
 		6AC191F41F8D3673000DA3FD /* Core_Data */ = {
 			isa = PBXGroup;
 			children = (
+				6AC192591F91272F000DA3FD /* AppDelegateCategories */,
 				6AC191F51F8D3673000DA3FD /* Entitys */,
 			);
 			path = Core_Data;
@@ -116,6 +120,15 @@
 				6AC1921B1F8D3805000DA3FD /* Owner+CoreDataProperties.m */,
 			);
 			path = Entitys;
+			sourceTree = "<group>";
+		};
+		6AC192591F91272F000DA3FD /* AppDelegateCategories */ = {
+			isa = PBXGroup;
+			children = (
+				6AC1925A1F91275F000DA3FD /* AppDelegate+Data_Working.h */,
+				6AC1925B1F91275F000DA3FD /* AppDelegate+Data_Working.m */,
+			);
+			path = AppDelegateCategories;
 			sourceTree = "<group>";
 		};
 		6ADC28B81F8D29FA003959A6 = {
@@ -310,6 +323,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6AC1921D1F8D3805000DA3FD /* Car+CoreDataProperties.m in Sources */,
+				6AC1925C1F91275F000DA3FD /* AppDelegate+Data_Working.m in Sources */,
 				6AC1921E1F8D3805000DA3FD /* Owner+CoreDataClass.m in Sources */,
 				6ADC28C91F8D29FA003959A6 /* ViewController.m in Sources */,
 				6AC192221F8D40BD000DA3FD /* NSString+Validation.m in Sources */,

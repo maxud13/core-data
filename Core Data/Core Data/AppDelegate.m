@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "Owner+CoreDataProperties.h"
 #import "Car+CoreDataProperties.h"
+#import "AppDelegate+Data_Working.h"
+
 @interface AppDelegate ()
 
 @end
@@ -34,7 +36,7 @@
         {
             Car *car = [NSEntityDescription insertNewObjectForEntityForName:@"Car" inManagedObjectContext:self.persistentContainer.viewContext];
             
-            [car setValue:[NSString stringWithFormat:@"Car %lu"] forKey:@"name"];
+            [car setValue:[NSString stringWithFormat:@"Car %lu",i] forKey:@"name"];
             [car setValue:@(80 + i*10) forKey:@"speed"];
             
             [carSet addObject:car];
@@ -43,9 +45,18 @@
         owner.cars = carSet;
     }
     owners = [self owners];
+    Owner *owner = owners.firstObject;
+    
+    NSArray *allCars = [self allCars];
+    NSArray *carsWithSomeSpeed = [self carsWithSpeed:@(100) forOwner:owner];
+    NSArray *carsSortedBySpeed = [self carSortedBySpeed];
+    
+    
     NSLog(@"");
+    
     return YES;
 }
+
 -(NSArray *)owners
 {
     NSManagedObjectContext *context = self.persistentContainer.viewContext;
